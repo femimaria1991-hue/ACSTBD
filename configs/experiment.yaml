@@ -1,0 +1,83 @@
+experiment:
+  name: "Asymmetric Cross-Source Trust & Battery Dispatch"
+  seeds: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+  default_seed: 0
+  num_runs: 10
+
+models:
+  temporal_predictor:
+    lag_order: 3
+    hidden_layers: [64, 32]
+    activation: "relu"
+    dropout: 0.1
+    quantiles: [0.1, 0.5, 0.9]
+    lr: 0.001
+    weight_decay: 0.00001
+    batch_size: 64
+    max_epochs: 300
+    patience: 20
+    lr_scheduler_factor: 0.5
+    lr_scheduler_patience: 10
+
+  cross_source_predictor:
+    hidden_layers: [64, 32]
+    activation: "relu"
+    dropout: 0.1
+    quantiles: [0.1, 0.5, 0.9]
+    lr: 0.001
+    weight_decay: 0.00001
+    batch_size: 64
+    max_epochs: 300
+    patience: 20
+    lr_scheduler_factor: 0.5
+    lr_scheduler_patience: 10
+
+calibration:
+  target_far: 0.05
+
+dispatch:
+  kappa_r: 1.0
+  lambda_reserve: 1.0
+  epsilon_0: 0.05
+  gamma_risk: 0.8
+  battery_capacity_mwh: 2.0
+  p_max_ch_mw: 0.5
+  p_max_dis_mw: 0.5
+  eta_ch: 0.95
+  eta_dis: 0.95
+  soc_min: 0.10
+  soc_max: 0.90
+  soc_init: 0.50
+  dispatch_interval_h: 1.0
+  rolling_horizon_h: 24
+  grid_import_limit_mw: 1.2
+  c_bat: 10.0 # $/MWh
+  c_curt: 50.0 # $/MWh
+  emission_factor_tco2_per_mwh: 0.4536 # grid emission factor
+
+scenarios:
+  min_separation_hours: 2
+  s1:
+    episodes: 40
+    min_duration: 3
+    max_duration: 12
+    intensity_min: 0.3
+    intensity_max: 0.9
+  s2:
+    episodes: 20
+    min_duration: 6
+    max_duration: 24
+    temp_shift_min: 3.0
+    temp_shift_max: 6.0
+  s3:
+    episodes: 20
+    min_duration: 2
+    max_duration: 6
+    load_shift_min: 0.10
+    load_shift_max: 0.20
+  s4:
+    episodes: 20
+    min_duration: 3
+    max_duration: 12
+    temp_search_range: 15.0
+    temp_search_step: 0.25

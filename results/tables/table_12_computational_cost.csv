@@ -1,0 +1,13 @@
+Component,Training time (s),Inference / step time
+Temporal quantile network f_theta,8.0,—
+Cross-source quantile network g_phi,7.1,—
+Proposed suspicion score s_t,—,0.06 µs/h
+B1 (attention Bi-LSTM),97.2,0.234 ms/h
+B2 (EMD–GBDT),35.6,2.079 ms/h
+B3 (SR-UKF–LSTM),40.0,0.167 ms/h
+B4 (quantized RF),1.8,0.013 ms/h
+"Dispatch step, D1",—,2.73 ms
+"Dispatch step, D2",—,2.88 ms
+"Dispatch step, D3",—,2.71 ms
+"Dispatch step, D4",—,2.69 ms
+"Dispatch step, Proposed",—,2.66 ms

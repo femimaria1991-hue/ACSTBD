@@ -1,0 +1,30 @@
+dataset:
+  name: "PSML-PJM Combined Benchmark Dataset"
+  psml_source: "https://zenodo.org/record/5130612"
+  pjm_source: "https://dataminer2.pjm.com/feed/da_hrl_lmps"
+  citation_psml: "Zheng et al., Scientific Data 9:359 (2022)"
+  citation_pjm: "PJM Interconnection Day-Ahead Market (2018-2020)"
+  
+  start_date: "2018-01-01 00:00:00"
+  end_date: "2020-12-31 23:00:00"
+  total_observations: 26304
+  resolution: "1h"
+  
+  splits:
+    train_ratio: 0.60
+    cal_ratio: 0.20
+    test_ratio: 0.20
+    train_count: 15782
+    cal_count: 5261
+    test_count: 5261
+    validation_ratio_of_train: 0.15 # last 15% of train for early stopping
+    
+  scaling:
+    load_peak_mw: 1.0
+    renewable_peak_mw: 0.5
+    
+  channels:
+    load: "load_power"
+    temperature: "Temperature"
+    price: "price"
+    renewable: "renewable_gen" # wind_power + solar_power

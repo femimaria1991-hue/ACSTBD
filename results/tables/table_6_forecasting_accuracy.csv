@@ -1,0 +1,5 @@
+Model,Pinball q=0.1,Pinball q=0.5,Pinball q=0.9,Cov. (%),Width (MW),NRMSE (%),MAPE (%),R2
+Temporal predictor f_theta,0.0018,0.0032,0.0019,93.6,0.034,1.93,1.49,0.9962
+Cross-source predictor g_phi,0.0064,0.0149,0.0075,83.1,0.112,8.92,6.95,0.92
+"Two-stage MLP (Kim et al., 2026)",—,—,—,—,—,4.26,2.64,0.9529
+Proposed dual-quantile framework,0.0027,0.0063,0.0024,80.2,0.033,3.68,2.96,0.9864

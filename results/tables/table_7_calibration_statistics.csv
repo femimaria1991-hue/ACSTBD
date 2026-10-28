@@ -1,0 +1,7 @@
+Quantity,Symbol,Value
+Residual correlation,"rho, Eq. (11)",0.314
+Temporal interval coverage,—,91.3%
+Cross-source interval coverage,—,66.9%
+Target false-alarm rate,"alpha, Eq. (16)",0.05
+Suspicion threshold,"tau, Eq. (15)",0.4255
+Realized false-alarm rate,"FAR_hat, Eq. (18)",0.87%

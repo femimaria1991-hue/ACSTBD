@@ -1,0 +1,61 @@
+# Python environment & caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Testing & Linting
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Environment variables & secrets
+.env
+*.env
+.env.*
+
+# Large data files and raw archives
+data/raw/*.csv
+data/raw/*.zip
+data/raw/*.part
+data/interim/*.csv
+data/interim/*.npz
+data/interim/*.npy
+data/processed/*.csv
+
+# Trained checkpoints (documented how to reproduce via scripts/04_train_models.py)
+models/*.pt
+
+# Manuscript binary assets & temp files
+manuscript*.pdf
+manuscript*.docx
+~$*
+*.zip
+
+# OS specific
+.DS_Store
+Thumbs.db
+desktop.ini

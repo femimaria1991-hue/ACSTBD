@@ -1,0 +1,5 @@
+Dispatch variant,Jop (k$),Rsoc (%),Rinf (%),Euns (MWh)
+Without trust-aware load fusion (Eq. 19),61.34 ± 0.00,0.00 ± 0.00,0.00 ± 0.00,0.00 ± 0.00
+Without adaptive reserve (lambda = 0),61.34 ± 0.00,0.00 ± 0.00,0.00 ± 0.00,0.00 ± 0.00
+Without trust-dependent chance constraint (gamma = 0),61.34 ± 0.00,0.00 ± 0.00,0.00 ± 0.00,0.00 ± 0.00
+Full trust-aware dispatch,61.34 ± 0.00,0.00 ± 0.00,0.00 ± 0.00,0.00 ± 0.00

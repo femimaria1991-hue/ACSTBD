@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this software or benchmark in your research, please cite it as below."
+authors:
+  - family-names: "Rani"
+    given-names: "P. Femi Jasmine"
+    email: "femimaria1991@gmail.com"
+    affiliation: "Loyola Institute of Technology and Science, India"
+  - family-names: "Priyadharsini"
+    given-names: "Naveena A"
+    affiliation: "Rohini College of Engineering and Technology, India"
+title: "Asymmetric Cross Source Trust Assessment of Single-Meter Load Measurements for Chance Constrained Battery Dispatch"
+version: 1.0.0
+date-released: 2026-10-28
+url: "https://github.com/femimaria1991-hue/ACSTBD"
+keywords:
+  - "false data injection"
+  - "load measurement security"
+  - "quantile prediction"
+  - "measurement trust"
+  - "chance-constrained dispatch"
+  - "battery energy storage"

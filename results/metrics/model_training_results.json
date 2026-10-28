@@ -1,0 +1,44 @@
+[
+  {
+    "seed": 0,
+    "metrics_temporal": {
+      "pinball_0.1": 0.0018113001715391874,
+      "pinball_0.5": 0.003171708667650819,
+      "pinball_0.9": 0.0019323232118040323,
+      "coverage_percent": 93.59437369321422,
+      "width_mw": 0.03421250358223915,
+      "nrmse_percent": 1.9333786964416504,
+      "mape_percent": 1.4870860576629639,
+      "r2": 0.9962394833564758
+    },
+    "metrics_cross": {
+      "pinball_0.1": 0.006350610870867968,
+      "pinball_0.5": 0.01491184625774622,
+      "pinball_0.9": 0.0074693746864795685,
+      "coverage_percent": 83.1400874358487,
+      "width_mw": 0.11217846721410751,
+      "nrmse_percent": 8.9175386428833,
+      "mape_percent": 6.953972816467285,
+      "r2": 0.9199978709220886
+    },
+    "metrics_dual": {
+      "pinball_0.1": 0.002685962012037635,
+      "pinball_0.5": 0.006274133455008268,
+      "pinball_0.9": 0.0023839904461055994,
+      "coverage_percent": 80.23189507698156,
+      "width_mw": 0.03316674754023552,
+      "nrmse_percent": 3.681751251220703,
+      "mape_percent": 2.9604387283325195,
+      "r2": 0.9863629341125488
+    },
+    "calibration_stats": {
+      "seed": 0,
+      "residual_correlation_rho": 0.314481645822525,
+      "temporal_interval_coverage_pct": 91.25641513020338,
+      "cross_interval_coverage_pct": 66.88842425394411,
+      "target_false_alarm_rate_alpha": 0.05,
+      "suspicion_threshold_tau": 0.42548292875289917,
+      "realized_false_alarm_rate_far": 0.8743584869796617
+    }
+  }
+]

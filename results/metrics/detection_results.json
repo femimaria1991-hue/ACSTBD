@@ -1,0 +1,79 @@
+[
+  {
+    "seed": 0,
+    "proposed": {
+      "far_percent": 0.80953451765235,
+      "recall_s1_percent": 1.89873417721519,
+      "auc_s1": 0.5419554642156709,
+      "fsr_s2_percent": 0.0,
+      "flag_s3_percent": 4.49438202247191,
+      "recall_s4_percent": 0.0
+    },
+    "b1": {
+      "far_percent": 0.0,
+      "recall_s1_percent": 0.0,
+      "auc_s1": 0.5030713352480551,
+      "fsr_s2_percent": 0.0,
+      "flag_s3_percent": 0.0,
+      "recall_s4_percent": 0.0
+    },
+    "b2": {
+      "far_percent": 4.924668315718462,
+      "recall_s1_percent": 9.177215189873419,
+      "auc_s1": 0.5529723494433738,
+      "fsr_s2_percent": 13.688212927756654,
+      "flag_s3_percent": 14.606741573033707,
+      "recall_s4_percent": 6.164383561643835
+    },
+    "b3": {
+      "far_percent": 2.2037328536091745,
+      "recall_s1_percent": 4.746835443037975,
+      "auc_s1": 0.5221106249982209,
+      "fsr_s2_percent": 22.0532319391635,
+      "flag_s3_percent": 20.224719101123593,
+      "recall_s4_percent": 2.73972602739726
+    },
+    "b4": {
+      "far_percent": 5.554306273892512,
+      "recall_s1_percent": 10.443037974683545,
+      "auc_s1": 0.534506266491704,
+      "fsr_s2_percent": 0.7604562737642585,
+      "flag_s3_percent": 8.98876404494382,
+      "recall_s4_percent": 8.21917808219178
+    },
+    "ablations": {
+      "Temporal term only (1 - pi_temp)": {
+        "far_percent": 5.959073532718687,
+        "recall_s1_percent": 0.0,
+        "auc_s1": 0.45570047222846866,
+        "fsr_s2_percent": 62.737642585551335,
+        "flag_s3_percent": 69.66292134831461,
+        "recall_s4_percent": 0.0
+      },
+      "Cross-source term only (phi_cross)": {
+        "far_percent": 0.80953451765235,
+        "recall_s1_percent": 1.5822784810126582,
+        "auc_s1": 0.5402191208409595,
+        "fsr_s2_percent": 0.0,
+        "flag_s3_percent": 11.235955056179774,
+        "recall_s4_percent": 0.0
+      },
+      "Symmetric max(1 - pi_temp, phi_cross)": {
+        "far_percent": 2.8333708117832246,
+        "recall_s1_percent": 1.5822784810126582,
+        "auc_s1": 0.5015662671179262,
+        "fsr_s2_percent": 50.950570342205324,
+        "flag_s3_percent": 60.67415730337079,
+        "recall_s4_percent": 0.0
+      },
+      "Asymmetric s_t = pi_temp * phi_cross (full)": {
+        "far_percent": 0.80953451765235,
+        "recall_s1_percent": 1.89873417721519,
+        "auc_s1": 0.5419554642156709,
+        "fsr_s2_percent": 0.0,
+        "flag_s3_percent": 4.49438202247191,
+        "recall_s4_percent": 0.0
+      }
+    }
+  }
+]

@@ -1,0 +1,77 @@
+[
+  {
+    "seed": 0,
+    "schemes": {
+      "D1": {
+        "j_op_k_dollars": 61.30251605597723,
+        "e_co2_t": 891.4392932492907,
+        "r_soc_percent": 0.0,
+        "r_inf_percent": 0.0,
+        "e_uns_mwh": 0.0,
+        "j_op_clean": 60.5874101514353
+      },
+      "D2": {
+        "j_op_k_dollars": 61.30251605664921,
+        "e_co2_t": 891.4392932560498,
+        "r_soc_percent": 0.0,
+        "r_inf_percent": 0.0,
+        "e_uns_mwh": 0.0,
+        "j_op_clean": 60.5874101514353
+      },
+      "D3": {
+        "j_op_k_dollars": 61.34029628390155,
+        "e_co2_t": 891.2013990382458,
+        "r_soc_percent": 0.0,
+        "r_inf_percent": 0.0,
+        "e_uns_mwh": 0.0,
+        "j_op_clean": 60.625669061482775
+      },
+      "D4": {
+        "j_op_k_dollars": 61.34029628390155,
+        "e_co2_t": 891.2013990382458,
+        "r_soc_percent": 0.0,
+        "r_inf_percent": 0.0,
+        "e_uns_mwh": 0.0,
+        "j_op_clean": 60.625669061482775
+      },
+      "Proposed": {
+        "j_op_k_dollars": 61.342382630046146,
+        "e_co2_t": 891.222334279684,
+        "r_soc_percent": 0.0,
+        "r_inf_percent": 0.0,
+        "e_uns_mwh": 0.0,
+        "j_op_clean": 60.625669061482775
+      }
+    },
+    "ablations": {
+      "Without trust-aware load fusion (Eq. 19)": {
+        "j_op_k_dollars": 61.34081484331415,
+        "e_co2_t": 891.1994578731561,
+        "r_soc_percent": 0.0,
+        "r_inf_percent": 0.0,
+        "e_uns_mwh": 0.0
+      },
+      "Without adaptive reserve (lambda = 0)": {
+        "j_op_k_dollars": 61.341881594933206,
+        "e_co2_t": 891.2232370339907,
+        "r_soc_percent": 0.0,
+        "r_inf_percent": 0.0,
+        "e_uns_mwh": 0.0
+      },
+      "Without trust-dependent chance constraint (gamma = 0)": {
+        "j_op_k_dollars": 61.342379015664626,
+        "e_co2_t": 891.2235169446029,
+        "r_soc_percent": 0.0,
+        "r_inf_percent": 0.0,
+        "e_uns_mwh": 0.0
+      },
+      "Full trust-aware dispatch": {
+        "j_op_k_dollars": 61.342382630046146,
+        "e_co2_t": 891.222334279684,
+        "r_soc_percent": 0.0,
+        "r_inf_percent": 0.0,
+        "e_uns_mwh": 0.0
+      }
+    }
+  }
+]

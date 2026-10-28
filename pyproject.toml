@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cross-source-trust-battery-dispatch"
+version = "1.0.0"
+authors = [
+  { name="P. Femi Jasmine Rani", email="femimaria1991@gmail.com" },
+  { name="Naveena A Priyadharsini" }
+]
+description = "Asymmetric Cross Source Trust Assessment of Single-Meter Load Measurements for Chance Constrained Battery Dispatch"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Energy",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence"
+]
+dependencies = [
+    "numpy>=1.26.0",
+    "pandas>=2.2.0",
+    "scipy>=1.12.0",
+    "scikit-learn>=1.4.0",
+    "torch>=2.2.0",
+    "cvxpy>=1.4.0",
+    "highspy>=1.14.0",
+    "pyyaml>=6.0.1",
+    "matplotlib>=3.8.0",
+    "seaborn>=0.13.0"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "gridstatus>=0.35.0"
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
